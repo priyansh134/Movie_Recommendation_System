@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Recommender</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+  html {
+  box-sizing: border-box;
+  box-sizing: 
+}
+
+
+u{
+  text-decoration: none;
+  font-family: cooper;
+  font-size: 2em;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #000;
+}
+
+.movie{
+        height: 70vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-right: 40vh;
+        margin-left: 40vh;
+        display: block;
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        width: auto;
+        box-shadow: 0px 0px 10px -2px grey;
+        text-align: center;
+        width: 800px;
+        height: 300px;
+        
+
+    }
+    #movie_name{
+      
+      top: 355px;
+      left: 575px;
+      height: 30px;
+      width: 250px;
+      font-size: 17px;
+      
+    }
+
+    #submission_button{
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        background-color:dodgerblue;
+        border-style: none;
+    }
+
+
+    body{
+        background-image: url('https://wallpapercave.com/wp/wp3253716.jpg');
+        background-color: #000000;
+    }
+
+  #mySidenav a {
+  position: absolute;
+  right: -35px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#about {
+  top: 20px;
+  background-color: black;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+</style>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="{{url_for('about')}}" id="about">About us</a>
+  </div>
+
+  <br><br><br><br><br>
+  <div class="movie">
+    <h2><u>Movie Recommendation System</u></h2>
+<br>
+<form action="{{ url_for('main') }}" method="POST">
+  <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required />
+  <br><br>
+  <input type="submit" id="submission_button" value="Submit"/>
+    </form>
+        
+<br>
+        
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+
+#t1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#p1{
+  font: 18px Arial, sans-serif;
+}
+
+#t1 td, #t1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#t1 tr:nth-child(even){background-color: #f2f2f2;}
+
+#t1 tr:hover {background-color: #ddd;}
+
+#t1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.movie{
+        height: 70vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-right: 40vh;
+        margin-left: 55vh;
+        display: block;
+        background-color: white;
+        padding: 2em;
+        border-radius: 10px;
+        width: auto;
+        box-shadow: 0px 0px 10px -2px grey;
+        text-align: center;
+        width: 650px;
+        height: 600px;
+    }
+
+    u{
+       text-decoration: none;
+       font-family: cooper;
+       font-size: 3em;
+    }
+
+    body{
+        background-image: url('https://wallpapercave.com/wp/wp3253716.jpg');
+        background-color: #000000;
+    }   
+
+</style>
+<body>
+  <div class="movie">
+        <h3><u>Recommendations:</u></h3>
+        <p id="p1">Showing results for: {{ search_name }}</p>
+          <table id="t1" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Date</th>
+            </tr>
+        <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                    <td>{{ movie_date[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                    <td>{{ movie_date[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                    <td>{{ movie_date[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                    <td>{{ movie_date[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                    <td>{{ movie_date[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                    <td>{{ movie_date[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                    <td>{{ movie_date[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                    <td>{{ movie_date[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+                    <td>{{ movie_date[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                    <td>{{ movie_date[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+  
+</body>
+</html>
